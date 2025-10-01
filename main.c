@@ -4,6 +4,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
+        printf("COUNT ARGUMENTS ERROR");
         return 1;
     }
 
@@ -13,6 +14,7 @@ int main(int argc, char *argv[]) {
     double eps = strtod(argv[1], &end);
 
     if (*end != '\0') {
+        printf("EPSI ERROR");
         return 1;
     }
 
